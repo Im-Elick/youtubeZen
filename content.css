@@ -1,0 +1,45 @@
+/*■■■ menu ■■■*/
+/* create video */
+#buttons > ytd-topbar-menu-button-renderer:nth-child(1){
+  display: none　!important;
+  visibility: hidden;
+}
+/* youtube style */
+#buttons > ytd-topbar-menu-button-renderer:nth-child(2){
+  display: none　!important;
+  visibility: hidden;
+}
+
+/*■■■ home ■■■*/
+/* recommend */
+ytd-two-column-browse-results-renderer[page-subtype="home"] #primary {
+  display: none;
+}
+
+/*■■■ side menubar ■■■*/
+/* explore */
+#sections > ytd-guide-section-renderer:nth-child(3){
+  display: none;
+}
+/* youtube apps */
+#items > ytd-guide-entry-renderer:nth-child(2){
+  display: none;
+}
+/* descriptions */
+#footer{
+  display: none;
+}
+/* "sub channles" */
+#sections > ytd-guide-section-renderer:nth-child(2) > h3{
+  display: none;
+}
+
+/*■■■ video ■■■*/
+/* comment */
+#comments{
+  display: none;
+}
+/* recommned */
+#secondary{
+  display: none;
+}

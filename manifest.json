@@ -1,0 +1,30 @@
+{
+  "manifest_version":2,
+  "name":"Example extension",
+  "version":"1.0",
+  "permissions":[
+    "storage",
+    "cookies",
+    "*://www.youtube.com/*"
+  ],
+  "content_scripts":[
+    {
+      "matches":[
+        "https://www.youtube.com/*"
+      ],
+      "all_frames": true,
+      "js":[
+        "content.js"
+      ],
+      "css":[
+        "content.css"
+      ]
+    }
+  ],
+  "background":{
+    "scripts":[
+      "background.js"
+    ],
+    "persistent": false
+  }
+}
